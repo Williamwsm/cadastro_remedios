@@ -30,7 +30,7 @@ public class RemedioController {
         return service.listarTodos();
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("remover/{id}")
     public Boolean deleteRemId(@PathVariable Long id){
         return service.deleteRemId(id);
     }

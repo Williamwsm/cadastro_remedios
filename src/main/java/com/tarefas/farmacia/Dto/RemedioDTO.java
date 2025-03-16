@@ -8,7 +8,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RemedioDTO {
-    private long remNrId;
+    private Long remNrId;
     private String remTxNome;
     private boolean remBlreceita;
     private Date remDtValidade;
@@ -24,27 +24,51 @@ public class RemedioDTO {
         this.remDbValor =remedio.getRemDbValor();
     }
 
-    public long getRemNrId() {
+    public Long getRemNrId() {
         return remNrId;
+    }
+
+    public void setRemNrId(Long remNrId) {
+        this.remNrId = remNrId;
     }
 
     public String getRemTxNome() {
         return remTxNome;
     }
 
+    public void setRemTxNome(String remTxNome) {
+        this.remTxNome = remTxNome;
+    }
+
     public boolean isRemBlreceita() {
         return remBlreceita;
+    }
+
+    public void setRemBlreceita(boolean remBlreceita) {
+        this.remBlreceita = remBlreceita;
     }
 
     public Date getRemDtValidade() {
         return remDtValidade;
     }
 
+    public void setRemDtValidade(Date remDtValidade) {
+        this.remDtValidade = remDtValidade;
+    }
+
     public String getRemTxLaboratorio() {
         return remTxLaboratorio;
     }
 
+    public void setRemTxLaboratorio(String remTxLaboratorio) {
+        this.remTxLaboratorio = remTxLaboratorio;
+    }
+
     public double getRemDbValor() {
         return remDbValor;
+    }
+
+    public void setRemDbValor(double remDbValor) {
+        this.remDbValor = remDbValor;
     }
 }
