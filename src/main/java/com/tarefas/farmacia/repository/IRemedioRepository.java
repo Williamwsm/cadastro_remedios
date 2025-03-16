@@ -1,6 +1,6 @@
-package repository;
+package com.tarefas.farmacia.repository;
 
-import model.Remedio;
+import com.tarefas.farmacia.model.Remedio;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

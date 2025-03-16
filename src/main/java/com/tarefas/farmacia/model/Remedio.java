@@ -1,4 +1,4 @@
-package model;
+package com.tarefas.farmacia.model;
 
 import jakarta.persistence.*;
 import lombok.*;

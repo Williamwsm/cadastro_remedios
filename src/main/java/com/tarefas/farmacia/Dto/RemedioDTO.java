@@ -1,8 +1,8 @@
-package Dto;
+package com.tarefas.farmacia.Dto;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import model.Remedio;
+import com.tarefas.farmacia.model.Remedio;
 
 import java.util.Date;
 @AllArgsConstructor
@@ -22,5 +22,29 @@ public class RemedioDTO {
         this.remDtValidade = remedio.getRemDtValidade();
         this.remTxLaboratorio = remedio.getRemTxLaboratorio();
         this.remDbValor =remedio.getRemDbValor();
+    }
+
+    public long getRemNrId() {
+        return remNrId;
+    }
+
+    public String getRemTxNome() {
+        return remTxNome;
+    }
+
+    public boolean isRemBlreceita() {
+        return remBlreceita;
+    }
+
+    public Date getRemDtValidade() {
+        return remDtValidade;
+    }
+
+    public String getRemTxLaboratorio() {
+        return remTxLaboratorio;
+    }
+
+    public double getRemDbValor() {
+        return remDbValor;
     }
 }
